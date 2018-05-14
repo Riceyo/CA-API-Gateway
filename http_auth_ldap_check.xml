@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References>
+        <IDProviderReference RefType="com.l7tech.console.policy.exporter.IdProviderReference">
+            <GOID>4cc2e4392c8d8240b43b597920aaf70e</GOID>
+            <Name>LDAP</Name>
+            <Props>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGphdmEgdmVyc2lvbj0iMS44&#xd;
+LjBfMTAyIiBjbGFzcz0iamF2YS5iZWFucy5YTUxEZWNvZGVyIj4KIDxvYmplY3QgY2xhc3M9Imph&#xd;
+dmEudXRpbC5IYXNoTWFwIj4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+cmV0dXJu&#xd;
+aW5nQXR0cmlidXRlczwvc3RyaW5nPgogICA8YXJyYXkgY2xhc3M9ImphdmEubGFuZy5TdHJpbmci&#xd;
+IGxlbmd0aD0iMCIvPgogIDwvdm9pZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+&#xd;
+dXNybWFwcGluZ3M8L3N0cmluZz4KICAgPG9iamVjdCBjbGFzcz0iamF2YS51dGlsLkhhc2hNYXAi&#xd;
+PgogICAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+aW5ldG9yZ3BlcnNvbjwvc3Ry&#xd;
+aW5nPgogICAgIDxvYmplY3QgY2xhc3M9ImNvbS5sN3RlY2guaWRlbnRpdHkubGRhcC5Vc2VyTWFw&#xd;
+cGluZ0NvbmZpZyI+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJlbWFpbE5hbWVBdHRyTmFtZSI+CiAg&#xd;
+ICAgICA8c3RyaW5nPm1haWw8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9w&#xd;
+ZXJ0eT0iZmlyc3ROYW1lQXR0ck5hbWUiPgogICAgICAgPHN0cmluZz5naXZlbk5hbWU8L3N0cmlu&#xd;
+Zz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ia2VyYmVyb3NBdHRyTmFtZSI+&#xd;
+CiAgICAgICA8c3RyaW5nPnVpZDwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHBy&#xd;
+b3BlcnR5PSJsYXN0TmFtZUF0dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+c248L3N0cmluZz4KICAg&#xd;
+ICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ibG9naW5BdHRyTmFtZSI+CiAgICAgICA8&#xd;
+c3RyaW5nPnVpZDwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJu&#xd;
+YW1lQXR0ck5hbWUiPgogICAgICAgPHN0cmluZz5jbjwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAg&#xd;
+ICAgIDx2b2lkIHByb3BlcnR5PSJvYmpDbGFzcyI+CiAgICAgICA8c3RyaW5nPmluZXRPcmdQZXJz&#xd;
+b248L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0icGFzc3dkQXR0&#xd;
+ck5hbWUiPgogICAgICAgPHN0cmluZz51c2VyUGFzc3dvcmQ8L3N0cmluZz4KICAgICAgPC92b2lk&#xd;
+PgogICAgICA8dm9pZCBwcm9wZXJ0eT0icGFzc3dkVHlwZSI+CiAgICAgICA8b2JqZWN0IGNsYXNz&#xd;
+PSJjb20ubDd0ZWNoLmlkZW50aXR5LmxkYXAuUGFzc3dkU3RyYXRlZ3kiLz4KICAgICAgPC92b2lk&#xd;
+PgogICAgICA8dm9pZCBwcm9wZXJ0eT0idXNlckNlcnRBdHRyTmFtZSI+CiAgICAgICA8c3RyaW5n&#xd;
+PnVzZXJDZXJ0aWZpY2F0ZTtiaW5hcnk8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgIDwvb2Jq&#xd;
+ZWN0PgogICAgPC92b2lkPgogICA8L29iamVjdD4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJw&#xd;
+dXQiPgogICA8c3RyaW5nPmxkYXBzZWFyY2hiYXNlPC9zdHJpbmc+CiAgIDxzdHJpbmc+ZGM9bDd0&#xd;
+ZWNoLGRjPWNvbTwvc3RyaW5nPgogIDwvdm9pZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxz&#xd;
+dHJpbmc+bGRhcEJpbmRETjwvc3RyaW5nPgogICA8c3RyaW5nPjwvc3RyaW5nPgogIDwvdm9pZD4K&#xd;
+ICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+Z3JvdXBDYWNoZVNpemU8L3N0cmluZz4K&#xd;
+ICAgPGludD4xMDA8L2ludD4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3Ry&#xd;
+aW5nPmdyb3VwTWF4TmVzdGluZzwvc3RyaW5nPgogICA8aW50PjU8L2ludD4KICA8L3ZvaWQ+CiAg&#xd;
+PHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3RyaW5nPmdycG1hcHBpbmdzPC9zdHJpbmc+CiAgIDxv&#xd;
+YmplY3QgY2xhc3M9ImphdmEudXRpbC5IYXNoTWFwIj4KICAgIDx2b2lkIG1ldGhvZD0icHV0Ij4K&#xd;
+ICAgICA8c3RyaW5nPnBvc2l4Z3JvdXA8L3N0cmluZz4KICAgICA8b2JqZWN0IGNsYXNzPSJjb20u&#xd;
+bDd0ZWNoLmlkZW50aXR5LmxkYXAuR3JvdXBNYXBwaW5nQ29uZmlnIj4KICAgICAgPHZvaWQgcHJv&#xd;
+cGVydHk9Im1lbWJlckF0dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+bWVtYmVyVWlkPC9zdHJpbmc+&#xd;
+CiAgICAgIDwvdm9pZD4KICAgICAgPHZvaWQgcHJvcGVydHk9Im1lbWJlclN0cmF0ZWd5Ij4KICAg&#xd;
+ICAgIDxvYmplY3QgY2xhc3M9ImNvbS5sN3RlY2guaWRlbnRpdHkubGRhcC5NZW1iZXJTdHJhdGVn&#xd;
+eSI+CiAgICAgICAgPHZvaWQgcHJvcGVydHk9InZhbCI+CiAgICAgICAgIDxpbnQ+MTwvaW50Pgog&#xd;
+ICAgICAgIDwvdm9pZD4KICAgICAgIDwvb2JqZWN0PgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lk&#xd;
+IHByb3BlcnR5PSJuYW1lQXR0ck5hbWUiPgogICAgICAgPHN0cmluZz5jbjwvc3RyaW5nPgogICAg&#xd;
+ICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJvYmpDbGFzcyI+CiAgICAgICA8c3RyaW5n&#xd;
+PnBvc2l4R3JvdXA8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgIDwvb2JqZWN0PgogICAgPC92&#xd;
+b2lkPgogICAgPHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+Z3JvdXBvZnVuaXF1ZW5h&#xd;
+bWVzPC9zdHJpbmc+CiAgICAgPG9iamVjdCBjbGFzcz0iY29tLmw3dGVjaC5pZGVudGl0eS5sZGFw&#xd;
+Lkdyb3VwTWFwcGluZ0NvbmZpZyI+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJtZW1iZXJBdHRyTmFt&#xd;
+ZSI+CiAgICAgICA8c3RyaW5nPnVuaXF1ZU1lbWJlcjwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAg&#xd;
+ICAgIDx2b2lkIHByb3BlcnR5PSJtZW1iZXJTdHJhdGVneSI+CiAgICAgICA8b2JqZWN0IGNsYXNz&#xd;
+PSJjb20ubDd0ZWNoLmlkZW50aXR5LmxkYXAuTWVtYmVyU3RyYXRlZ3kiPgogICAgICAgIDx2b2lk&#xd;
+IHByb3BlcnR5PSJ2YWwiPgogICAgICAgICA8aW50PjI8L2ludD4KICAgICAgICA8L3ZvaWQ+CiAg&#xd;
+ICAgICA8L29iamVjdD4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ibmFtZUF0&#xd;
+dHJOYW1lIj4KICAgICAgIDxzdHJpbmc+Y248L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8&#xd;
+dm9pZCBwcm9wZXJ0eT0ib2JqQ2xhc3MiPgogICAgICAgPHN0cmluZz5ncm91cE9mVW5pcXVlTmFt&#xd;
+ZXM8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgIDwvb2JqZWN0PgogICAgPC92b2lkPgogICAg&#xd;
+PHZvaWQgbWV0aG9kPSJwdXQiPgogICAgIDxzdHJpbmc+b3JnYW5pemF0aW9uYWx1bml0PC9zdHJp&#xd;
+bmc+CiAgICAgPG9iamVjdCBjbGFzcz0iY29tLmw3dGVjaC5pZGVudGl0eS5sZGFwLkdyb3VwTWFw&#xd;
+cGluZ0NvbmZpZyI+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJtZW1iZXJBdHRyTmFtZSI+CiAgICAg&#xd;
+ICA8c3RyaW5nPjwvc3RyaW5nPgogICAgICA8L3ZvaWQ+CiAgICAgIDx2b2lkIHByb3BlcnR5PSJt&#xd;
+ZW1iZXJTdHJhdGVneSI+CiAgICAgICA8b2JqZWN0IGNsYXNzPSJjb20ubDd0ZWNoLmlkZW50aXR5&#xd;
+LmxkYXAuTWVtYmVyU3RyYXRlZ3kiPgogICAgICAgIDx2b2lkIHByb3BlcnR5PSJ2YWwiPgogICAg&#xd;
+ICAgICA8aW50PjM8L2ludD4KICAgICAgICA8L3ZvaWQ+CiAgICAgICA8L29iamVjdD4KICAgICAg&#xd;
+PC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ibmFtZUF0dHJOYW1lIj4KICAgICAgIDxzdHJp&#xd;
+bmc+b3U8L3N0cmluZz4KICAgICAgPC92b2lkPgogICAgICA8dm9pZCBwcm9wZXJ0eT0ib2JqQ2xh&#xd;
+c3MiPgogICAgICAgPHN0cmluZz5vcmdhbml6YXRpb25hbFVuaXQ8L3N0cmluZz4KICAgICAgPC92&#xd;
+b2lkPgogICAgIDwvb2JqZWN0PgogICAgPC92b2lkPgogICA8L29iamVjdD4KICA8L3ZvaWQ+CiAg&#xd;
+PHZvaWQgbWV0aG9kPSJwdXQiPgogICA8c3RyaW5nPm9yaWdpbmFsVGVtcGxhdGVOYW1lPC9zdHJp&#xd;
+bmc+CiAgIDxzdHJpbmc+R2VuZXJpY0xEQVA8L3N0cmluZz4KICA8L3ZvaWQ+CiAgPHZvaWQgbWV0&#xd;
+aG9kPSJwdXQiPgogICA8c3RyaW5nPmFkbWluRW5hYmxlZDwvc3RyaW5nPgogICA8Ym9vbGVhbj50&#xd;
+cnVlPC9ib29sZWFuPgogIDwvdm9pZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+&#xd;
+bGRhcHVybDwvc3RyaW5nPgogICA8YXJyYXkgY2xhc3M9ImphdmEubGFuZy5TdHJpbmciIGxlbmd0&#xd;
+aD0iMSI+CiAgICA8dm9pZCBpbmRleD0iMCI+CiAgICAgPHN0cmluZz5sZGFwOi8vdjkyPC9zdHJp&#xd;
+bmc+CiAgICA8L3ZvaWQ+CiAgIDwvYXJyYXk+CiAgPC92b2lkPgogIDx2b2lkIG1ldGhvZD0icHV0&#xd;
+Ij4KICAgPHN0cmluZz5jbGllbnRBdXRoPC9zdHJpbmc+CiAgIDxib29sZWFuPmZhbHNlPC9ib29s&#xd;
+ZWFuPgogIDwvdm9pZD4KICA8dm9pZCBtZXRob2Q9InB1dCI+CiAgIDxzdHJpbmc+cmVjb25uZWN0&#xd;
+VGltZW91dDwvc3RyaW5nPgogICA8bG9uZz42MDAwMDwvbG9uZz4KICA8L3ZvaWQ+CiA8L29iamVj&#xd;
+dD4KPC9qYXZhPgo=</Props>
+            <TypeVal>2</TypeVal>
+        </IDProviderReference>
+    </exp:References>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <L7p:AuditAssertion>
+                <L7p:SaveRequest booleanValue="true"/>
+                <L7p:SaveResponse booleanValue="true"/>
+            </L7p:AuditAssertion>
+            <L7p:HttpBasic/>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:SpecificUser>
+                        <L7p:IdentityProviderOid goidValue="4cc2e4392c8d8240b43b597920aaf70e"/>
+                        <L7p:UserLogin stringValue="jkirk"/>
+                        <L7p:UserName stringValue="James Kirk"/>
+                        <L7p:UserUid stringValue="cn=James Kirk,ou=people,dc=l7tech,dc=com"/>
+                    </L7p:SpecificUser>
+                    <L7p:AuditDetailAssertion>
+                        <L7p:Detail stringValue="LET KIRK IN"/>
+                    </L7p:AuditDetailAssertion>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="KIRK CHECK"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:MemberOfGroup>
+                        <L7p:GroupId stringValue="cn=Humans,ou=people,dc=l7tech,dc=com"/>
+                        <L7p:GroupName stringValue="Humans"/>
+                        <L7p:IdentityProviderOid goidValue="4cc2e4392c8d8240b43b597920aaf70e"/>
+                    </L7p:MemberOfGroup>
+                    <L7p:AuditDetailAssertion>
+                        <L7p:Detail stringValue="LET HUMANS IN"/>
+                    </L7p:AuditDetailAssertion>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="HUMAN CHECK"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+            </wsp:OneOrMore>
+            <L7p:HttpRoutingAssertion>
+                <L7p:ProtectedServiceUrl stringValue="${gateway.myresthost}"/>
+                <L7p:ProxyPassword stringValueNull="null"/>
+                <L7p:ProxyUsername stringValueNull="null"/>
+                <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                    <L7p:ForwardAll booleanValue="true"/>
+                    <L7p:Rules httpPassthroughRules="included">
+                        <L7p:item httpPassthroughRule="included">
+                            <L7p:Name stringValue="Cookie"/>
+                        </L7p:item>
+                        <L7p:item httpPassthroughRule="included">
+                            <L7p:Name stringValue="SOAPAction"/>
+                        </L7p:item>
+                    </L7p:Rules>
+                </L7p:RequestHeaderRules>
+                <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                    <L7p:ForwardAll booleanValue="true"/>
+                    <L7p:Rules httpPassthroughRules="included"/>
+                </L7p:RequestParamRules>
+                <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                    <L7p:ForwardAll booleanValue="true"/>
+                    <L7p:Rules httpPassthroughRules="included">
+                        <L7p:item httpPassthroughRule="included">
+                            <L7p:Name stringValue="Set-Cookie"/>
+                        </L7p:item>
+                    </L7p:Rules>
+                </L7p:ResponseHeaderRules>
+            </L7p:HttpRoutingAssertion>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References/>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <L7p:SetVariable>
+                <L7p:Base64Expression stringValue=""/>
+                <L7p:VariableToSet stringValue="city"/>
+            </L7p:SetVariable>
+            <L7p:SetVariable>
+                <L7p:Base64Expression stringValue="NDUsNg=="/>
+                <L7p:VariableToSet stringValue="latlon"/>
+            </L7p:SetVariable>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${latlon}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="ANY"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item stringLength="included">
+                                <L7p:Max intValue="-1"/>
+                                <L7p:Min intValue="1"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HttpRoutingAssertion>
+                        <L7p:ProtectedServiceUrl stringValue="https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyBGTKGnn3-UYWK1D4ewnalqiit-EEDmFg0&amp;latlng=${latlon}"/>
+                        <L7p:ProxyPassword stringValueNull="null"/>
+                        <L7p:ProxyUsername stringValueNull="null"/>
+                        <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Cookie"/>
+                                </L7p:item>
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="SOAPAction"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:RequestHeaderRules>
+                        <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included"/>
+                        </L7p:RequestParamRules>
+                        <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Set-Cookie"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:ResponseHeaderRules>
+                    </L7p:HttpRoutingAssertion>
+                    <L7p:JsonTransformation>
+                        <L7p:Convention convention="JSONML"/>
+                        <L7p:RootTagString stringValue=""/>
+                    </L7p:JsonTransformation>
+                    <L7p:EvaluateJsonPathExpression>
+                        <L7p:Expression stringValue="$.childNodes..childNodes.[4].childNodes.[1].childNodes.[0]"/>
+                        <L7p:Target target="RESPONSE"/>
+                        <L7p:VariablePrefix stringValue="latloncity"/>
+                    </L7p:EvaluateJsonPathExpression>
+                    <L7p:HttpRoutingAssertion>
+                        <L7p:ProtectedServiceUrl stringValue="http://api.openweathermap.org/data/2.5/weather?q=${latloncity.result}&amp;APPID=0cba5017ebcd8b83fb461f79a11458d1&amp;mode=xml"/>
+                        <L7p:ProxyPassword stringValueNull="null"/>
+                        <L7p:ProxyUsername stringValueNull="null"/>
+                        <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Cookie"/>
+                                </L7p:item>
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="SOAPAction"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:RequestHeaderRules>
+                        <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included"/>
+                        </L7p:RequestParamRules>
+                        <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Set-Cookie"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:ResponseHeaderRules>
+                        <L7p:SamlAssertionVersion intValue="2"/>
+                    </L7p:HttpRoutingAssertion>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${city}"/>
+                        <L7p:MultivaluedComparison multivaluedComparison="ANY"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item stringLength="included">
+                                <L7p:Max intValue="-1"/>
+                                <L7p:Min intValue="1"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HttpRoutingAssertion>
+                        <L7p:ProtectedServiceUrl stringValue="http://api.openweathermap.org/data/2.5/weather?q=${city}&amp;APPID=0cba5017ebcd8b83fb461f79a11458d1&amp;mode=xml"/>
+                        <L7p:ProxyPassword stringValueNull="null"/>
+                        <L7p:ProxyUsername stringValueNull="null"/>
+                        <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Cookie"/>
+                                </L7p:item>
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="SOAPAction"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:RequestHeaderRules>
+                        <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included"/>
+                        </L7p:RequestParamRules>
+                        <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Set-Cookie"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:ResponseHeaderRules>
+                        <L7p:SamlAssertionVersion intValue="2"/>
+                    </L7p:HttpRoutingAssertion>
+                </wsp:All>
+            </wsp:OneOrMore>
+            <L7p:JsonTransformation>
+                <L7p:Convention convention="JSONML"/>
+                <L7p:RootTagString stringValue=""/>
+            </L7p:JsonTransformation>
+            <L7p:EvaluateJsonPathExpression>
+                <L7p:Expression stringValue="$.childNodes..value[7]"/>
+                <L7p:Target target="RESPONSE"/>
+                <L7p:VariablePrefix stringValue="w"/>
+            </L7p:EvaluateJsonPathExpression>
+            <L7p:EvaluateJsonPathExpression>
+                <L7p:Expression stringValue="$.childNodes..name[0]"/>
+                <L7p:Target target="RESPONSE"/>
+                <L7p:VariablePrefix stringValue="c"/>
+            </L7p:EvaluateJsonPathExpression>
+            <L7p:HardcodedResponse>
+                <L7p:Base64ResponseBody stringValue="JHtjLnJlc3VsdH0KJHt3LnJlc3VsdH0="/>
+                <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
+            </L7p:HardcodedResponse>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>

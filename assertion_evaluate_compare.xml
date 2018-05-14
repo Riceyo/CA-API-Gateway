@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exp:Export Version="3.0"
+    xmlns:L7p="http://www.layer7tech.com/ws/policy"
+    xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <exp:References/>
+    <wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+        <wsp:All wsp:Usage="Required">
+            <L7p:AuditAssertion>
+                <L7p:SaveRequest booleanValue="true"/>
+                <L7p:SaveResponse booleanValue="true"/>
+            </L7p:AuditAssertion>
+            <L7p:SetVariable>
+                <L7p:Base64Expression stringValue="dHJ1ZQ=="/>
+                <L7p:VariableToSet stringValue="test"/>
+            </L7p:SetVariable>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${test}"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:RightValue stringValue="true"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:HttpRoutingAssertion>
+                        <L7p:ProtectedServiceUrl stringValue="${gateway.myresthost}"/>
+                        <L7p:ProxyPassword stringValueNull="null"/>
+                        <L7p:ProxyUsername stringValueNull="null"/>
+                        <L7p:RequestHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Cookie"/>
+                                </L7p:item>
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="SOAPAction"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:RequestHeaderRules>
+                        <L7p:RequestParamRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included"/>
+                        </L7p:RequestParamRules>
+                        <L7p:ResponseHeaderRules httpPassthroughRuleSet="included">
+                            <L7p:ForwardAll booleanValue="true"/>
+                            <L7p:Rules httpPassthroughRules="included">
+                                <L7p:item httpPassthroughRule="included">
+                                    <L7p:Name stringValue="Set-Cookie"/>
+                                </L7p:item>
+                            </L7p:Rules>
+                        </L7p:ResponseHeaderRules>
+                    </L7p:HttpRoutingAssertion>
+                    <L7p:AuditDetailAssertion>
+                        <L7p:Detail stringValue="ROUTING"/>
+                    </L7p:AuditDetailAssertion>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="TRUE"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <wsp:All wsp:Usage="Required">
+                    <L7p:ComparisonAssertion>
+                        <L7p:CaseSensitive booleanValue="false"/>
+                        <L7p:Expression1 stringValue="${test}"/>
+                        <L7p:Operator operatorNull="null"/>
+                        <L7p:Predicates predicates="included">
+                            <L7p:item dataType="included">
+                                <L7p:Type variableDataType="string"/>
+                            </L7p:item>
+                            <L7p:item binary="included">
+                                <L7p:Operator operator="NE"/>
+                                <L7p:RightValue stringValue="true"/>
+                            </L7p:item>
+                        </L7p:Predicates>
+                    </L7p:ComparisonAssertion>
+                    <L7p:AuditDetailAssertion>
+                        <L7p:Detail stringValue="NOT ROUTING"/>
+                    </L7p:AuditDetailAssertion>
+                    <L7p:assertionComment>
+                        <L7p:Properties mapValue="included">
+                            <L7p:entry>
+                                <L7p:key stringValue="LEFT.COMMENT"/>
+                                <L7p:value stringValue="FALSE"/>
+                            </L7p:entry>
+                        </L7p:Properties>
+                    </L7p:assertionComment>
+                </wsp:All>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="CHECK"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:OneOrMore>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>
